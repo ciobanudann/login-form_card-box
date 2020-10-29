@@ -1,9 +1,12 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
-* {
-  padding: 0;
-  margin: 0;
-}
 
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +15,7 @@ body {
   background-size: cover;
 }
 .login-box {
-  width: 280px;
+  width: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,18 +26,19 @@ body {
 .login-box h1 {
   float: left;
   font-size: 40px;
-  border-bottom: 6px solid #4caf50;
-  margin-bottom: 50px;
   padding: 13px 0;
+  margin-bottom: 30px;
 }
 
 .textbox {
   width: 100%;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 25px;
   padding: 8px 0;
   margin: 8px 0;
-  border-bottom: 1px solid #4caf50;
+  line-height: 25px;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
 }
 .textbox i {
   width: 26px;
@@ -46,7 +50,8 @@ body {
   outline: none;
   background: none;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 30px;
   width: 80%;
   float: left;
   margin: 0 10px;
@@ -54,7 +59,10 @@ body {
 .btn {
   background: none;
   width: 100%;
-  border: 2px solid #4caf50;
+  background-color: #ff356d;
+  box-shadow: 0px 0px 4px 4px #ff356d;
+  border: none;
+  height: 40px;
   color: white;
   padding: 5px;
   font-size: 18px;
@@ -62,9 +70,127 @@ body {
   outline: none;
 }
 .btn:hover {
-  background-color: rgba(231, 244, 231, 0.2);
-  caret-color: red;
+  background-color: transparent;
+  transition: 0.3s;
 }
 .textbox:hover {
   background-color: rgba(231, 244, 231, 0.1);
+  border-bottom-color: #ff356d;
+  transition: 0.3s;
+}
+
+/* optional features */
+
+.ops {
+  display: flex;
+  color: white;
+  font-size: 15px;
+  justify-content: space-between;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.ops .remember #checkb {
+  position: relative;
+  vertical-align: middle;
+  top: -0.75px;
+}
+.ops .remember label {
+  line-height: 20px;
+}
+.ops a {
+  color: white;
+}
+input[type="checkbox"] {
+  -ms-transform: scale(0.75); /* IE */
+  -moz-transform: scale(0.75); /* FF */
+  -webkit-transform: scale(0.75); /* Safari and Chrome */
+  -o-transform: scale(0.75); /* Opera */
+  transform: scale(0.75);
+  padding: 10px;
+}
+.round-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+.round-btn {
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px 5px #ff356d;
+
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: #ff356d;
+  border-radius: 50%;
+  color: white;
+}
+
+/* social media buttons */
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.fb-btn,
+.twt-btn {
+  width: 180px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.fb-btn p,
+.twt-btn p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  text-align: left;
+  margin-left: 40px;
+}
+.fb-btn i,
+.twt-btn i {
+  float: left;
+  border-right: 1px solid #fff;
+  height: 100%;
+  width: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.fb-btn {
+  background-color: #3769ae;
+  box-shadow: 0px 0px 2px 2px #3769ae;
+}
+
+.twt-btn {
+  background-color: #11bffe;
+  box-shadow: 0px 0px 2px 2px #11bffe;
+}
+.fb-btn:hover p,
+.twt-btn:hover p {
+  color: #3769ae;
+}
+.fb-btn:hover i,
+.twt-btn:hover i {
+  color: #3769ae;
+  border-right: 1px solid #3769ae;
+}
+.fb-btn:hover,
+.twt-btn:hover {
+  background-color: white;
+}
+.twt-btn:hover i {
+  color: #11bffe;
+  border-right: 1px solid #11bffe;
+}
+.twt-btn:hover p {
+  color: #11bffe;
+}
+
+.copyright {
+  margin-top: 50px;
+  text-align: center;
+  height: 40px;
+  line-height: 20px;
 }

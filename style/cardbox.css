@@ -11,13 +11,20 @@
   box-sizing: border-box;
 }
 body {
-  width: 100vw;
+  top: 150px;
+  width: 100%;
   height: 100vh;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   background: url("../img/back.jpg");
   background-size: contain;
+  position: relative;
+}
+.card-container {
+  position: relative;
+
+  justify-content: center;
 }
 .card {
   display: grid;
@@ -264,4 +271,56 @@ a:hover {
   .c1 {
     height: 500px;
   }
+}
+
+/* Addition */
+.content {
+  display: block;
+  color: white;
+  font-family: var(--menubarFF);
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.car {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+  height: 50px;
+  grid-template-areas: "l1" "sun" "l2";
+  align-items: center;
+}
+.line1 {
+  grid-area: l1;
+}
+.line2 {
+  grid-area: l2;
+}
+.sun {
+  grid-area: s;
+}
+.car hr {
+  height: 4px;
+  background-color: white;
+  border: none;
+}
+.car i {
+  color: white;
+  font-size: 60px;
+}
+
+.content p {
+  line-height: 30px;
+}
+
+.rm-btn {
+  margin: 30px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: rgb(255, 7, 110);
+  color: white;
+  font-family: var(--menubarFF);
+  font-size: 24px;
 }

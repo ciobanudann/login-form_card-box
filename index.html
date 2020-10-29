@@ -1,24 +1,48 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="login-box">
-        <h1>Login</h1>
+        <h1>Classy Login Form</h1>
         <div class="textbox">
-            <i class="fa fa-user"></i>
-            <input type="text" placeholder="Username">
+            <i class="fa fa-user" id="ico"></i>
+            <input type="text" onmouseover="chbg('#ff356d')" onmouseout="chbg('white')" placeholder="Username">
         </div>
 
         <div class="textbox">
-            <i class="fa fa-lock"></i>
-            <input type="password" placeholder="Password">
+            <i class="fa fa-lock" id="ico2"></i>
+            <input type="password" onmouseover="chbg2('#ff356d')" onmouseout="chbg2('white')" placeholder="Password">
         </div>
-        <input type="button" onclick="window.open('card-items.html')" class="btn" value="Sign in">
+        <div class="ops">
+            <div class="remember">
+                <input type="checkbox" id="checkb">
+                <label for="checkb">Remember me</label>
+            </div>
+            <a href="#">Forgot Password?</a>
+        </div>
+        <input type="button" onclick="window.open('card-items.html')" class="btn" value="Login">
+        <div class="round-btn-wrapper">
+            <input type="button" value="or" class="round-btn">
+        </div>
+        <div class="social-media">
+            <div class="facebook">
+                <button class="fb-btn"><i class="fa fa-facebook-f fa-2x"></i><p>Facebook</p></button>
+            </div>
+            <div class="twitter-button">
+                <button class="twt-btn"><i class="fa fa-twitter fa-2x"></i><p>Twitter</p></button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>@2020 Classy Login Form. All rights reserved. Designed by Ciobanu Dan</p>
+        </div>
     </div>
-
+    <script src="js/changeColor.js"></script>
 </body>
+
 </html>
