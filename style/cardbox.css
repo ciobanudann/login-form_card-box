@@ -259,17 +259,10 @@ a:hover {
 
 @media (max-width: 1050px) {
   .card-container {
-    top: 600px;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 360px;
     grid-template-areas: "c1" "c2" "c3";
-  }
-  .card-container:first-child {
-    height: 500px;
-  }
-  .c1 {
-    height: 500px;
   }
 }
 
